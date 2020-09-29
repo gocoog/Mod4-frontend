@@ -2,37 +2,50 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+@font-face {
+  font-family: 'Blue_Spirits';
+  src: local('Blue_Spirits'), url(./fonts/Blue_Spirits.otf) format('truetype');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ui.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-family: 'Blue_Spirits';
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  font-size: 35px !important;
+  font-weight: bolder !important;
+  color: white !important;
+  -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: black !important;
+}
+
+.form {
+  padding: 100px;
+}
+
+
+
+label{
+  font-size: 2.5rem !important;
+  padding: 20px !important;
+  font-weight: bolder !important;
+  color: white !important;
+  -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: black !important;
+}
+
+.ui.search{
+  padding: 20px;
+}
+
+#header{
+  font-family: 'Blue_Spirits';
+  font-size: 2rem;
 }

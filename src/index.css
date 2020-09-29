@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+* {
+  text-align: center;
+  font-family: 'Blue_Spirits';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Blue_Spirits';
+  src: local('Blue_Spirits'), url(./fonts/Blue_Spirits.otf) format('truetype');
+}
+
+
+
+.back {
+  background-image: url('./images/robot-vote.png') ; 
+  background-repeat: no-repeat;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+label{
+  font-size: 2rem;
 }
