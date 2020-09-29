@@ -54,14 +54,14 @@ class Signup extends React.Component {
                 <Form.Input fluid label='Email Address' value={this.state.email_address} placeholder='Email Address' onChange={this.handleInputChange} name='email_address'/>
                 </Form.Group>
                 <Form.Group widths='equal'>
-                <Form.Input fluid label='Password' placeholder='Password' value={this.state.password} onChange={this.handleInputChange} name='password' />
+                <Form.Input type="password" fluid label='Password' placeholder='Password' value={this.state.password} onChange={this.handleInputChange} name='password' />
                 <Form.Input fluid label='Location' value={this.state.location} placeholder='Location' onChange={this.handleInputChange} name='location'/>
                 </Form.Group>
                 <Form.Group widths='equal'>
                 <Form.Input fluid label='Age' value={this.state.age} placeholder='Age' onChange={this.handleInputChange} name='age'/>
                 <Form.Input fluid label='Gender' value={this.state.gender} placeholder='Gender' onChange={this.handleInputChange} name='gender'/>
             </Form.Group >
-            <Form.Button class="button" onClick={this.handleSubmit}>Submit</Form.Button>
+            <Form.Button disabled={!this.state.name || !this.state.email_address || !this.state.password || !this.state.location || !this.state.age || !this.state.gender} class="button" onClick={this.handleSubmit}>Submit</Form.Button>
         </Form>
       )
     }

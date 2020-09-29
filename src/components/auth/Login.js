@@ -52,7 +52,7 @@ class Login extends Component {
             <Form style={{ height: '100vh' }} verticalAlign='middle'>
                 <Form.Group widths='equal'>
                     <Form.Input fluid label='Email Address' value={this.state.email_address} placeholder='Email Address' onChange={this.handleInputChange} name='email_address'/>
-                    <Form.Input fluid label='Password' placeholder='Password' value={this.state.password} onChange={this.handleInputChange} name='password' />
+                    <Form.Input type="password" fluid label='Password' placeholder='Password' value={this.state.password} onChange={this.handleInputChange} name='password' />
                 </Form.Group >
                 <Form.Button onClick={this.handleSubmit}>Submit</Form.Button>
             </Form>
