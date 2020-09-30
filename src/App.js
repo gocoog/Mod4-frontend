@@ -6,6 +6,7 @@ import Login from './components/auth/Login'
 import Signup from './components/auth/Signup'
 import NewElectionForm from './components/NewElectionForm'
 import './fonts/Blue_Spirits.otf'
+import Results from './components/Results'
 
 import {
   BrowserRouter,
@@ -64,6 +65,10 @@ class App extends Component {
 
             <Route exact path="/new_election_form">
               <NewElectionForm handleElectionSubmit={this.handleElectionSubmit} />
+            </Route>
+
+            <Route exact path="/results">
+              <Results  />
             </Route>
 
             <Route path="/logout" component={() => {

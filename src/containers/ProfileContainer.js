@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ElectionCard from './ElectionCard';
 import Search from '../components/Search'
+
 export default class ProfileContainer extends Component {
     state = {
         elections: [],

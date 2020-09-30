@@ -12,6 +12,9 @@ const handleLoginRender = (isLoggedIn) => {
         <Menu.Item className="menu">
         <NavLink className="menu" to="/new_election_form"> Add New Election </NavLink>
         </Menu.Item>
+        <Menu.Item className="menu">
+        <NavLink className="menu" to="/results"> See who's in the lead!</NavLink>
+        </Menu.Item>
         </>
       )
     }else{

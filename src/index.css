@@ -26,3 +26,21 @@
 label{
   font-size: 2rem;
 }
+
+.table{
+  font-family: 'Blue_Spirits';
+  font-size: 2rem;
+  text-align: center !important; 
+  width: 400px;
+  position: relative;
+}
+
+.list{
+  font-family: 'Blue_Spirits' !important;
+  font-size: 4rem !important;
+  padding: 3px !important;
+  font-weight: bolder !important;
+  color: white !important;
+  -webkit-text-stroke-width: 2px !important;
+    -webkit-text-stroke-color: black !important;
+}

@@ -54,7 +54,7 @@ class NewElectionForm extends React.Component {
         return (
             <Form className="form" style={{ height: '100vh' }} verticalAlign='middle'>
                 <Form.Group widths='equal' className="form">
-                    <Form.Input fluid label='Election Name' value={this.state.election_name} placeholder='Election Name' onChange={this.handleChange} name='election_name'/>
+                    <Form.Input fluid label='Name' value={this.state.election_name} placeholder='Name' onChange={this.handleChange} name='election_name'/>
                     <Form.Input fluid label='Image Url' placeholder='Image Url' value={this.state.img_url} onChange={this.handleChange} name='img_url' />
                 </Form.Group >
                     <Form.TextArea label='Description' value={this.state.election_desc}  placeholder='Tell us more about your election' onChange={this.handleChange} name='election_desc' />

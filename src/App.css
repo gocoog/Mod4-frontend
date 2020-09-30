@@ -49,3 +49,19 @@ label{
   font-family: 'Blue_Spirits';
   font-size: 2rem;
 }
+
+/* .table{
+  font-family: 'Blue_Spirits';
+  font-size: 2rem;
+  display: flex;
+  text-align: center !important; 
+} */
+
+/* .list{
+  font-family: 'Blue_Spirits';
+  list-style-type: none;
+  font-size: 3rem !important;
+  color: white !important;
+  -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: black !important;
+} */
