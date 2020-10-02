@@ -1,4 +1,6 @@
 import React from 'react'
+import ElectionData from './ElectionData'
+import { withRouter } from 'react-router-dom'
 import { Header, Image, List } from 'semantic-ui-react'
 
 class Results extends React.Component {
@@ -26,15 +28,24 @@ class Results extends React.Component {
           })
       }
 
+      handleClick = (candidate) => {
+        console.log(candidate.election_name)
+        this.props.history.push({
+            pathname: '/candidate_data',
+            state: {
+                candidate: candidate
+            }
+          });
+    }
+
 
     render() {
         return (
             <List className="list">
                 {this.state.candidates.map((el) => (
-                <List.Item className="list">
+                <List.Item key={el.id} className="list" onClick={() => this.handleClick(el)}>
                     <Image avatar src={el.img_url} />
-                    {console.log(el.img_url)}
-                <List.Content className="list">
+                <List.Content className="list" >
                     <List.Header className="list" >
                     {el.election_name}
                     </List.Header>
@@ -50,4 +61,4 @@ class Results extends React.Component {
     
 }
 
-export default Results
+export default withRouter(Results)

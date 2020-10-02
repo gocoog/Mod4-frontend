@@ -50,18 +50,32 @@ label{
   font-size: 2rem;
 }
 
-/* .table{
-  font-family: 'Blue_Spirits';
-  font-size: 2rem;
-  display: flex;
-  text-align: center !important; 
-} */
+.chart-container {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  stroke-linejoin: round;
+  justify-content: center;
+  stroke-width: 3;
+  padding-left: 5%;
+  font-size: 35px;
+}
 
-/* .list{
-  font-family: 'Blue_Spirits';
-  list-style-type: none;
-  font-size: 3rem !important;
+h2{
+  justify-content: center;
+  font-size: 5rem !important;
+  font-family: 'Blue_Spirits' !important;
   color: white !important;
   -webkit-text-stroke-width: 1px !important;
     -webkit-text-stroke-color: black !important;
-} */
+}
+tspan{
+  color: white !important;
+  -webkit-text-stroke-width: 1px !important;
+    -webkit-text-stroke-color: black !important;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

@@ -7,6 +7,7 @@ import Signup from './components/auth/Signup'
 import NewElectionForm from './components/NewElectionForm'
 import './fonts/Blue_Spirits.otf'
 import Results from './components/Results'
+import ElectionData from './components/ElectionData'
 
 import {
   BrowserRouter,
@@ -14,7 +15,9 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
+
 import { Menu } from 'semantic-ui-react';
+import ElecionData from './components/ElectionData';
 
 class App extends Component {
   state = {
@@ -70,6 +73,8 @@ class App extends Component {
             <Route exact path="/results">
               <Results  />
             </Route>
+
+            <Route exact path="/candidate_data" component={ElecionData} />
 
             <Route path="/logout" component={() => {
               localStorage.clear()

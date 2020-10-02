@@ -3,6 +3,7 @@
 * {
   text-align: center;
   font-family: 'Blue_Spirits';
+  
 }
 
 @font-face {
@@ -44,3 +45,4 @@ label{
   -webkit-text-stroke-width: 2px !important;
     -webkit-text-stroke-color: black !important;
 }
+

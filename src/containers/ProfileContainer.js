@@ -5,7 +5,8 @@ import Search from '../components/Search'
 export default class ProfileContainer extends Component {
     state = {
         elections: [],
-        allElections: []
+        allElections: [],
+        votes: []
       }
     
       componentDidMount() {
